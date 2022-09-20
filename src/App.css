@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.carousel-item .container img {
+  width: 25%;
+  object-fit: contain;
+}
