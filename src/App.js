@@ -7,18 +7,22 @@ import {
 } from 'react-router-dom'
 import Home from './components/home';
 import NewsPage from './components/newsPage';
+import AboutPage from './components/aboutPage';
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
+        <nav className='navbar navbar-expand-lg bg-light'>
+          <ul className='navbar-nav'>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="nav-link">Home</Link>
             </li>
             <li>
-              <Link to="/News">News</Link>
+              <Link to="/News" className="nav-link">News</Link>
+            </li>
+            <li>
+              <Link to="/About" className="nav-link">About</Link>
             </li>
           </ul>
         </nav>
@@ -29,6 +33,8 @@ function App() {
           <Route path="/News" element={<NewsPage />}>
           </Route>
           <Route path="/" element={<Home />}>
+          </Route>
+          <Route path="/About" element={<AboutPage />}>
           </Route>
         </Switch>
         <footer className='App-footer'>
