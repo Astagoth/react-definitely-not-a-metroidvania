@@ -15,13 +15,13 @@ function App() {
       <div>
         <nav className='navbar navbar-expand-lg bg-light'>
           <ul className='navbar-nav'>
-            <li>
+            <li className='nav-item'>
               <Link to="/" className="nav-link">Home</Link>
             </li>
-            <li>
+            <li className='nav-item'>
               <Link to="/News" className="nav-link">News</Link>
             </li>
-            <li>
+            <li className='nav-item'>
               <Link to="/About" className="nav-link">About</Link>
             </li>
           </ul>
@@ -37,8 +37,8 @@ function App() {
           <Route path="/About" element={<AboutPage />}>
           </Route>
         </Switch>
-        <footer className='App-footer'>
-
+        <footer className='page-footer font-small light'>
+          
         </footer>
       </div>
     </Router>

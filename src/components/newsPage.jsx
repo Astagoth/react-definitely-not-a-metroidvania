@@ -10,25 +10,40 @@ class NewsPage extends Component {
         return (
             <Carousel>
                 <CarouselItem>
-                    <img 
-                    className='d-block w-50'
-                    src={jinx} 
-                    alt="Jinx" 
-                    />
+                    <div className="d-flex justify-content-center">
+                        <img 
+                        className='img-fluid w-50'
+                        src={jinx} 
+                        alt="Jinx" 
+                        />
+                    </div>
+                    <Carousel.Caption>
+                        <h3>News 1</h3>
+                    </Carousel.Caption>
                 </CarouselItem>
                 <CarouselItem>
-                    <img 
-                    className='d-block w-50'
-                    src={tournament} 
-                    alt="Tournament" 
-                    />
+                <div className="d-flex justify-content-center">
+                        <img 
+                        className='img-fluid w-50'
+                        src={tournament} 
+                        alt="Tournament" 
+                        />
+                    </div>
+                    <Carousel.Caption>
+                        <h3>News 2</h3>
+                    </Carousel.Caption>
                 </CarouselItem>
                 <CarouselItem>
-                    <img
-                    className='d-block w-50' 
-                    src={evelynn} 
-                    alt="Evelynn" 
-                    />
+                <div className="d-flex justify-content-center">
+                        <img 
+                        className='img-fluid w-50'
+                        src={evelynn} 
+                        alt="Evelynn" 
+                        />
+                    </div>
+                    <Carousel.Caption>
+                        <h3>News 3</h3>
+                    </Carousel.Caption>
                 </CarouselItem>
             </Carousel>
         );
